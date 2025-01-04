@@ -25,12 +25,21 @@ text = st.text_input("Enter the text to be encrypted:")
 shift = st.number_input("Enter the shift value (1-25):", min_value=-25, max_value=25, value=5)
 
 # Button to encrypt
-if st.button("Encrypt"):
+if st.button("Run Encryption"):
     if text:
         encrypted_text = caesar(text, shift)
         st.write('**Plain text:**', text)
         st.write('**Encrypted text:**', encrypted_text)
-        else:
+    else:
+        if st.button("Run Decryption"):
+	if text:
+        decrypted_text = caesar_encrypt(text, -shift)  # Use negative shift for decryption
+        st.write('**Input text:**', text)
+        st.write('**Decrypted text:**', decrypted_text)
+	else:
+        st.warning("Please enter a text to decrypt.")
+
+
 
 
 
