@@ -41,5 +41,3 @@ if st.button("Run Decryption"):
         st.write('**Decrypted text:**', decrypted_text)
     else:
         st.warning("Please enter a text to decrypt.")
-        st.write(The cipher can encrypt and decrypt messages)
-        
