@@ -30,7 +30,7 @@ if st.button("Encrypt"):
         encrypted_text = caesar(text, shift)
         st.write('**Plain text:**', text)
         st.write('**Encrypted text:**', encrypted_text)
-    else:
+        else:
 
 
 
