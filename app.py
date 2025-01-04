@@ -24,8 +24,6 @@ text = st.text_input("Enter the text to be encrypted:")
 # Input for shift value
 shift = st.number_input("Enter the shift value (1-25):", min_value=-25, max_value=25, value=5)
 
-
-        st.warning("Please enter a text to encrypt.")
         # button to decrypt
         if st.button("Decrypt"):
 	if text:
